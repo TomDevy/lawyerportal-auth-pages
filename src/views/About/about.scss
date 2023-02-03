@@ -1,0 +1,360 @@
+@import '/src/styles/mixins';
+
+.main-about{
+    position: relative;
+    width: 100%;
+}
+.header-a {
+    position: relative;
+}
+.first {
+    background-image: url('../../../src/assets/images/Mask group (2).png');
+    @include respond(tab-land){
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
+.mid-text {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    @include respond(tab-land) {
+
+    }
+}
+.mid-text h3{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 42px;
+    color: white;
+}
+.mid-text p{
+    color: white;
+    width: 75%;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+.body-abt{
+    padding: 100px;
+    @include respond(phone){
+        padding: 40px 20px;
+    }
+}
+.re-def{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    @include respond(phone){
+        flex-direction: column;
+        padding: 0;
+
+    }
+}
+.txt-re{
+    width: 50%;
+    @include respond(phone){
+        width: 100%;
+        padding: 0;
+    }
+}
+.txt-re .explanation {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.heading p{
+    font-weight: bold;
+    font-size: 18px;
+}
+.explanation p{
+    color: #36373A;
+}
+.img-re {
+    width: 35%;
+    margin-right: 25px;
+    @include respond(phone) {
+        width: 20%;
+        }
+}
+.second-r{
+    position: absolute;
+}
+.first-r {
+    width: 300px;
+    position: relative;
+    @include respond(phone) {
+        width: 100px;
+        }
+}
+.first-r img{
+    width: 400px;
+    @include respond(phone) {
+            width: 200px;
+            margin-top: 60px;
+        }
+}
+.second-r {
+    position: absolute;
+    top: -30px;
+    left: -50px;
+    z-index: 10;
+}
+.third-r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    left: -120px;
+    z-index: 20;
+    background-color: #DBDFE4;
+    width: 127px;
+    height: 126px;
+    border-radius: 5px;
+    @include respond(phone) {
+            width: 65px;
+            height: 65px;
+            top: 40px;
+            left: -80px;
+        }
+}
+.third-r img{
+    width: 65px;
+    height: 65px;
+    @include respond(phone) {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: -27px;
+        }
+}
+
+.just-del{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include respond(phone) {
+        flex-direction: column-reverse;
+        }
+}
+.img-just{
+    width: 50%;
+    @include respond(phone) {
+            width: 20%;
+        }
+}
+.first-j img{
+    width: 400px;
+    @include respond(phone) {
+            width: 200px;
+            margin-top: 40px;
+            margin-left: -80px;
+        }
+}
+.first-j{
+    position: relative;
+    @include respond(phone) {
+            width: 100px;
+        }
+}
+.second-j{
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    z-index: 10;
+}
+.third-j{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    z-index: 10;
+    background-color: #DBDFE4;
+    width: 127px;
+    height: 126px;
+    border-radius: 5px;
+    @include respond(phone) {
+        width: 65px;
+        height: 65px;
+        top: 120px;
+        right: -110px;
+        }
+}
+.third-j img{
+    width: 65px;
+    height: 65px;
+    @include respond(phone) {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: -20px;
+            right: -40px;
+        }
+}
+.txt-just{
+    width: 40%;
+    margin-top: 90px;
+    margin-right: 120px;
+    @include respond(phone) {
+            width: 100%;
+            padding-left: 60px;
+            margin-top: 20px;
+        }
+}
+.heading p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 125%;
+}
+.explana p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    width: 525px;
+    @include respond(phone) {
+        width: 100%;
+    }
+
+}
+.explanation p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    width: 616px;
+}
+.innovation{
+    background-color: var(--color-secondary);
+    padding: 100px;
+    @include respond(phone) {
+            width: 100%;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+}
+.heading-in{
+    color: white;
+}
+.heading-in p{
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    @include respond(phone) {
+        margin-bottom: 20px;
+        }
+}
+.heading-in h4{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+}
+.flex-inv{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    row-gap: 10px;
+    @include respond(phone) {
+        flex-direction: column;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        }
+}
+.flex-card{
+    margin-top: 70px;
+    position: relative;
+    padding: 20px;
+    border: 2px solid #BABBBE;
+    border-radius: 0.9rem;
+    height: 280px;
+    width: 350px;
+    @include respond(phone) {
+        margin-top: 10px;
+        }
+}
+.in-title  {
+    color: white;
+    margin-bottom: 20px;
+}
+.in-title h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 125%;
+}
+.in-desc p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+.in-desc{
+    color: white;
+    font-size: 16px;
+    opacity: 0.7;
+}
+.team{
+    padding: 100px;
+    background-color: #d0d1d3;
+    @include respond(phone) {
+        padding: 40px 20px;
+        width: 100%;
+        }
+}
+.head-team h4{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+}
+.head-team p{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.6;
+    @include respond(phone) {
+        margin-bottom: 20px;
+        }
+}
+.team-flex{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    row-gap: 10px;
+    @include respond(phone) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+}
+.team-image{
+    position: relative;
+    filter: grayscale(100%);
+}
+.team-name{
+    position: relative;
+    top: -70px;
+    right: -20px;
+    color: white;
+    width: 180px;
+}
+.team-name P{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+}
