@@ -41,7 +41,11 @@ function Header() {
               Login
             </NavLink>
           </BtnSecondary>
-          <BtnPrimary>Sign Up</BtnPrimary>
+          <BtnPrimary>
+            <NavLink to={ROUTE.SIGNUP}>
+              SignUp
+            </NavLink>
+            </BtnPrimary>
         </div>
       </div>
     </header>
