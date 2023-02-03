@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import style from "../../file-case.module.scss";
-import Select from "../../../../../components/select";
 import { BtnTertiary, Btn } from "../../../../../components/button";
 import ClaimantForm from "./form";
 import { generateUniqueId } from "../../../../../utitlities/utilities";

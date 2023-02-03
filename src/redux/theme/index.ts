@@ -22,7 +22,7 @@ export const themeSlice = createSlice({
 
 });
 
-export const { } = themeSlice.actions;
+// export const { } = themeSlice.actions;
 
 export const selectTheme = (state: RootState) => state.theme.value;
 

@@ -1,52 +1,52 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { QuoteIcon } from '../../assets/icons';
 import { IMAGE } from '../../assets/images/images';
 import './index.scss'
 
-let scrollNum = 0;
+// let scrollNum = 0;
 
 const Carousel = ({ testimonials }: any) => {
-   const [isActiveCarousel, setisActiveCarousel] = useState(0);
+   // const [isActiveCarousel, setisActiveCarousel] = useState(0);
    const scrollRef: any = useRef(null);
 
 
-   const changeActiveCarouselPrev = () => {
-      const element = scrollRef.current;
-      if (isActiveCarousel < 1) {
-         scrollNum = 0;
-         setisActiveCarousel(0);
-         element.scrollTo({
-            left: 0,
-            behavior: "smooth",
-         });
-      } else {
-         scrollNum -= 400;
-         setisActiveCarousel((current) => current - 1);
-         element.scrollTo({
-            left: scrollNum,
-            behavior: "smooth",
-         });
-      }
-   };
+   // const changeActiveCarouselPrev = () => {
+   //    const element = scrollRef.current;
+   //    if (isActiveCarousel < 1) {
+   //       scrollNum = 0;
+   //       setisActiveCarousel(0);
+   //       element.scrollTo({
+   //          left: 0,
+   //          behavior: "smooth",
+   //       });
+   //    } else {
+   //       scrollNum -= 400;
+   //       setisActiveCarousel((current) => current - 1);
+   //       element.scrollTo({
+   //          left: scrollNum,
+   //          behavior: "smooth",
+   //       });
+   //    }
+   // };
 
-   const changeActiveCarouselNext = () => {
-      const element = scrollRef.current;
-      if (isActiveCarousel > testimonials?.length - 2) {
-         scrollNum = 0;
-         setisActiveCarousel(0);
-         element.scrollTo({
-            left: 0,
-            behavior: "smooth",
-         });
-      } else {
-         scrollNum += 400;
-         setisActiveCarousel((current) => current + 1);
-         element.scrollTo({
-            left: scrollNum,
-            behavior: "smooth",
-         });
-      }
-   };
+   // const changeActiveCarouselNext = () => {
+   //    const element = scrollRef.current;
+   //    if (isActiveCarousel > testimonials?.length - 2) {
+   //       scrollNum = 0;
+   //       setisActiveCarousel(0);
+   //       element.scrollTo({
+   //          left: 0,
+   //          behavior: "smooth",
+   //       });
+   //    } else {
+   //       scrollNum += 400;
+   //       setisActiveCarousel((current) => current + 1);
+   //       element.scrollTo({
+   //          left: scrollNum,
+   //          behavior: "smooth",
+   //       });
+   //    }
+   // };
 
    return (
       <div>

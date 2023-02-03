@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../../src/assets/images/logo.png";
-import justice from "../../../src/assets/images/justice.png";
 import eye from "../../../src/assets/icons/eye-slash.png";
 
 import "./login.scss";
@@ -16,7 +15,7 @@ const LoginPage = () => {
       <div className="left-s">
         <div className="s-main">
           <div className="sp-logo">
-            <img className="s-logo" src={logo}></img>
+            <img className="s-logo" alt="dd" src={logo}></img>
           </div>
           <div className="wc">
             <div className="heading">Welcome back</div>
@@ -35,6 +34,7 @@ const LoginPage = () => {
                     type={showPassword ? "text" : "password"}
                   />
                   <img
+                    alt="fd"
                     src={!showPassword ? eye : ""}
                     className="eye"
                     onClick={() => setShowPassword(!showPassword)}

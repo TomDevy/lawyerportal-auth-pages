@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import {  useState } from "react";
 import {
 	CopyIcon,
 	MyFirmIcon,
@@ -7,7 +7,6 @@ import {
 } from "../../../../components/icons/icons";
 import {
 	BtnPrimary,
-	BtnTertiary,
 	Btn,
 	BtnSecondary,
 } from "../../../../components/button";

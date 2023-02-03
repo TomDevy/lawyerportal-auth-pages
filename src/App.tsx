@@ -22,7 +22,7 @@ const IconPage = lazy(() => import("./views/icon-page"));
 // dashboard routes
 const FileCase = lazy(() => import("./views/dashboard/file-case"));
 const BasicInfo = lazy(() => import("./views/dashboard/file-case/subs/basic"));
-const Firms = lazy(() => import('./views/dashboard/firms'))
+// const Firms = lazy(() => import('./views/dashboard/firms'))
 const Claimant = lazy(() => import("./views/dashboard/file-case/subs/claimant/index"));
 
 function App() {

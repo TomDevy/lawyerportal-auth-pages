@@ -2,12 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { LOGO } from '../../assets/logos/logo'
 import * as ROUTE from '../../constants/routes'
-import { BtnPrimary, BtnSecondary, BtnTertiary } from '../button'
+import { BtnPrimary, BtnSecondary } from '../button'
 import './index.scss';
-
-import { Link } from 'react-router-dom'
-
-import logo from '../../../src/assets/icons/logo.png'
 
 import './header.scss'
 

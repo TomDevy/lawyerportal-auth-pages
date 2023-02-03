@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 
 import logo from '../../../src/assets/images/logo.png'
-import justice from '../../../src/assets/images/justice.png'
 import eye from '../../../src/assets/icons/eye-slash.png'
 
 import '../login/login.scss'
@@ -18,7 +17,7 @@ const SignUpM = () => {
       <div className='left-s'>
         <div className="s-main">
           <div className="sp-logo">
-            <img className="s-logo" src={logo}></img>
+            <img alt='fd' className="s-logo" src={logo}></img>
           </div>
           <div className="wc">
             <div className='heading' >Create Account</div>
@@ -46,13 +45,13 @@ const SignUpM = () => {
               <p className="label">Password</p>
               <div className='pass-icon'>
                   <input className="pass" placeholder="Password" type={showPassword ? 'text': 'password'} />
-                  <img src={!showPassword ? eye : ''} className="eye" onClick={() => setShowPassword(!showPassword)} />
+                  <img alt='df' src={!showPassword ? eye : ''} className="eye" onClick={() => setShowPassword(!showPassword)} />
               </div>  
             <div className="p-word">
               <p className="label">Confirm Password</p>
               <div className='pass-icon'>
                   <input className="pass" placeholder="Confirm Password" type={showPassword ? 'text': 'password'} />
-                  <img src={!showPassword ? eye : ''} className="eye" onClick={() => setShowPassword(!showPassword)} />
+                  <img alt='fd' src={!showPassword ? eye : ''} className="eye" onClick={() => setShowPassword(!showPassword)} />
               </div>  
             </div>
               <div className="cb">

@@ -3,7 +3,6 @@ import Page from "../../../components/page";
 import style from "./file-case.module.scss";
 import Head from "../ui/head";
 import { Btn } from "../../../components/button";
-import Select from "../../../components/select";
 import { Outlet } from "react-router-dom";
 
 function FileCase() {

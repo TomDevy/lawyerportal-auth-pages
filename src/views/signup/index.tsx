@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import {  useNavigate } from 'react-router-dom'
 
 
 import logo from '../../../src/assets/images/logo.png'
@@ -9,7 +8,6 @@ import './signUp.scss'
 import SignUpM from './signUpM'
 
 function SignUp() {
-  const navigate = useNavigate()
   const [page, setPage] = useState(<PreSignUp/>)
 
   setTimeout(() => {

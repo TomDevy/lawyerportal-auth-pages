@@ -4,10 +4,6 @@ import { BtnPrimary } from '../button'
 
 import './footer.scss'
 
-import logo from '../../../src/assets/icons/logo.png'
-import footerbg from '../../../src/assets/images/Rectangle 5.png'
-import newslbg from '../../../src/assets/images/Rectangle 16.png'
-
 function Footer() {
   return (
     <div>
